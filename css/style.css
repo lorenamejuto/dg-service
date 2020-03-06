@@ -464,7 +464,7 @@ button {
 .wp {
 	position: relative;
     padding-bottom: 16px;
-    padding-top: 0;
+    padding-top: 25px;
 }
 .seccion-formulario h1 {
 	font-size: 34px;
