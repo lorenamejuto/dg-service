@@ -446,5 +446,30 @@ button {
     bottom: -1px;
     left: -22px;
 }
-
+.comunicate h3{
+	font-size: 34px;
+	color: #fff;
+	background-color: inherit;
+	margin-left: 0;
+	padding: 2px 0 0 0;
+	text-transform: none;
+	   letter-spacing: 2px;
+}
+.footer-container {
+	border-top: 1px solid #fff;
+	width: 100%;
+	margin-top: 70px;
+}
+.footer p {
+	color: #fff;
+	font-size: 18px;
+	text-align: initial;
+}
+.footer span {
+	padding-left: 8px;
+} 
+.lineas-laterales {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
 /*Fin de sección formulario*/
