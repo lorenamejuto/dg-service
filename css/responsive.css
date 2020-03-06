@@ -30,7 +30,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .carousel {
+  #carouselPrincipal {
     margin-top: 127px;
   }
   .carousel-indicators {
@@ -89,7 +89,7 @@
   .navbar-brand {
     max-width: 240px;
   }
-  .carousel {
+  #carouselPrincipal {
     margin-top: 92px;
   }
   .carousel-indicators {
@@ -144,7 +144,7 @@
   .navbar-brand {
     max-width: 170px;
   }
-  .carousel {
+  #carouselPrincipal {
     margin-top: 70px;
   }
   .carousel-control-next, .carousel-control-prev {
