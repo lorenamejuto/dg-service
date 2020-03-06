@@ -133,18 +133,18 @@ b {
 	padding-right: 0;
     padding-left: 0;
 }
-.nav-item {
+.nav-link {
 	position: relative;
 	margin-left: 35px;
 	padding-bottom: 30px;
 }
-.nav-item:first-child {
+.nav-item:first-child .nav-link {
 	margin-left: 0;
 }
-.nav-item.active {
+.nav-link.active {
 	font-weight: 700;
 }
-.nav-item.active:after {
+.nav-link.active:after {
 	content: "";
 	position: absolute;
 	bottom: -2px;
@@ -422,7 +422,7 @@ hr {
 	border-radius: 50%;
 }
 .formulario {
-	margin-left: 0:;
+	margin-left: 0;
 }
 .formulario label {
 	font-size: 14px;
