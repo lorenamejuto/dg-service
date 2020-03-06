@@ -40,6 +40,7 @@ img {
 body {
 	font-family: 'now';
 	font-size: 14px;
+  background-color: #58BDE1;
 }
 h1 {
 	text-transform: uppercase;
@@ -50,6 +51,7 @@ h2 {
 	font-size: 16px;
 	text-transform: uppercase;
 	display: inline-block;
+  font-weight: 300;
 }
 h3 {
 	font-size: 18px;
@@ -57,7 +59,7 @@ h3 {
 	display: inline;
 }
 h4 {
-	font-weight: 300:
+	font-weight: 300;
 	font-size: 18px;
 	color: #fff;
 }
@@ -76,6 +78,9 @@ p {
 	line-height: 25px;
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+b {
+  font-weight: 700;
 }
 .espaciado {
 	padding-bottom: 15px;
@@ -106,6 +111,11 @@ p {
 /*Navbar*/
 .navbar {
 	padding: 50px 20px 50px;
+  background-color: #fff;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
 }
 .navbar-collapse {
 	justify-content: flex-end;
@@ -146,12 +156,16 @@ p {
 /*Fin Navbar*/
 
 /*Carousel Principal*/
+.carousel-inner {
+  z-index: 7;
+}
 .carousel-control-next, .carousel-control-prev {
 	opacity: 1;
 	width: 46px;
 	height: 55px;
 	top: 50%;
 	transform: translateY(-50%);
+  z-index: 9
 }
 .carousel-control-next-icon, .carousel-control-prev-icon {
 	width: 46px;
@@ -167,11 +181,12 @@ p {
 .carousel-indicators {
 	background-color: rgba(255, 255, 255, .5);
 	right: inherit;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-right: 0;
-    margin-left: 0;
-    padding: 8px 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-right: 0;
+  margin-left: 0;
+  padding: 8px 20px;
+  bottom: 65px;
 }
 .carousel-indicators li {
 	height: 9px;
@@ -186,11 +201,35 @@ p {
 .carousel-indicators .active {
 	background-color: #30348a;
 }
+.carousel-frase {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
+.carousel-frase h2 {
+  display: inline;
+  font-size: 34px;
+  color: #30348A;
+  white-space: pre-wrap;
+  background-color: #fff;
+  padding: 4px 10px;
+  line-height: 46px;
+}
+.carousel-frase b {
+  padding: 0 10px;
+}
 /*Fin Carousel Principal*/
 
 /*Sección Puerta a puerta*/
-.puerta-puerta .container-fluid {
-	background-color: #58bde1;
+.puerta-puerta {
+  margin-top: -55px;
+  position: relative;
+  z-index: 9;
 }
 .certificados {
 	background-color: #30348a;
