@@ -40,6 +40,12 @@
   .carousel-control-next, .carousel-control-prev {
     width: 40px;
   }
+  .puerta-puerta {
+    margin-top: -40px;
+  }
+  .puerta-puerta .container {
+    max-width: 970px;
+  }
 }
 
 @media(max-width: 767px) {
