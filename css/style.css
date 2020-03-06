@@ -153,6 +153,12 @@ b {
 	height: 4px;
 	background-color: #30348a;
 }
+.navbar-toggler-icon {
+  background-image: url(../images/menu.svg);
+}
+.navbar-toggler {
+  padding: 0;
+}
 /*Fin Navbar*/
 
 /*Carousel Principal*/
