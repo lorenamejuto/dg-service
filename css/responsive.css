@@ -46,6 +46,16 @@
   .puerta-puerta .container {
     max-width: 970px;
   }
+  .nosotros {
+    padding: 20px;
+  }
+  .nosotros p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .puerta-puerta h1 {
+    font-size: 32px;
+  }
 }
 
 @media(max-width: 767px) {
@@ -63,6 +73,20 @@
   }
   .puerta-puerta {
     margin-top: 0;
+  }
+  .certificados {
+    border-bottom: 0;
+  }
+  .grilla figure img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .nosotros {
+    padding: 20px 10px;
+  }
+  .servicio {
+    margin-top: 7px;
+    max-width: 110px;
   }
 }
 

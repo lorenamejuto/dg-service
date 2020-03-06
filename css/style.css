@@ -227,7 +227,7 @@ b {
   line-height: 46px;
 }
 .carousel-frase b {
-  padding: 0 10px;
+  padding: 0 3px 0 10px;
 }
 /*Fin Carousel Principal*/
 
@@ -237,8 +237,17 @@ b {
   position: relative;
   z-index: 9;
 }
+
+.fondo-puerta-puerta {
+  background-image: url(../images/fondo-puerta-puerta.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-bottom: 3px solid #58BDE1;
+}
 .certificados {
 	background-color: #30348a;
+  border-bottom: 3px solid #58BDE1;
 }
 .grilla {
 	position: relative;
@@ -272,22 +281,36 @@ b {
 	flex: 0 0 50%;
 }
 .grilla figure img {
-	padding: 20px;
+	padding: 0 15px 0 0;
+}
+.grilla figure:nth-child(2) img, .grilla figure:last-child img {
+	padding: 0 0 0 15px;
 }
 .nosotros {
 	padding: 45px 40px;
 }
 .nosotros h2 {
+  position: relative;
 	padding: 10px 25px;
 	color: #fff;
 	background-color: #30348a;
 	margin-bottom: 5px;
 }
+.nosotros h2:after {
+  position: absolute;
+  bottom: -8px;
+  left: -1px;
+  content:"";
+  background-image: url(../images/dialogo.png);
+  width: 15px;
+  height: 9px;
+}
 .nosotros h3 {
-	padding: 0 6px;
+  display: inline;
 	font-weight: 700;
 	color: #30348a;
 	background-color: #5cccea;
+  box-shadow: 5px 0 0 #5cccea, -5px 0 0 #5cccea;
 }
 hr {
 	height: 1px;
