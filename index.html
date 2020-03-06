@@ -25,7 +25,7 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg">
+	<nav class="navbar navbar-expand-lg fixed-top">
     <a href="#" class="navbar-brand">
       <img src="images/dg-service.png" alt="DG Service">
     </a>
@@ -39,16 +39,16 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Nosotros</a>
+          <a class="nav-link" href="#nosotros">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Servicio</a>
+          <a class="nav-link" href="#servicios">Servicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Taller</a>
+          <a class="nav-link" href="#taller">Taller</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
         </li>
       </ul>
     </div>
@@ -105,7 +105,7 @@
             </figure>
           </div>
         </div>
-        <div class="col-12 col-md-6 fondo-puerta-puerta">
+        <div class="col-12 col-md-6 fondo-puerta-puerta" id="nosotros">
           <div class="nosotros">
             <h2>nosotros</h2>
             <p>Somos una empresa dedicada a la <b>reparación de electrodomésticos.</b></p>
@@ -115,7 +115,7 @@
           </div>
         </div>
         <div class="row izquierda fondo-blanco">
-          <div class="col-12 centrado">
+          <div class="col-12 centrado servicio-container">
             <img class="servicio" src="images/servicio.png" alt="servicio puerta a puerta">
             <h1>servicio <b>puerta a puerta</b></h1>
           </div>
@@ -123,17 +123,17 @@
       </div>
     </div>
   </section>
-  <img width="100%" src="images/imagenes-servicios.jpg" alt="imagenes servicio">
-  <section class="container-fluid servicio-autorizado centrado">
-    <div class="container">
+  <img width="100%" src="images/imagenes-servicios.jpg" alt="imagenes servicio" id="servicios">
+  <section class="container-fluid servicio-autorizado-container centrado">
+    <div class="container servicio-autorizado">
       <div class="row">
-        <div class="col-4 fondo-celeste">
+        <div class="col-12 col-sm-4 fondo-celeste">
           <h3>calidad</h3>
         </div>
-        <div class="col-4 fondo-azul">
+        <div class="col-12 col-sm-4 fondo-azul">
           <h3>trayectoria</h3>
         </div>
-        <div class="col-4 fondo-celeste">
+        <div class="col-12 col-sm-4 fondo-celeste">
           <h3>servicio</h3>
         </div>
       </div>
@@ -178,16 +178,11 @@
         <img src="images/warranty.png" alt="logo warranty">
       </div>
 
-      <div class="row">
+      <div class="row" id="taller">
         <div class="carrousel-2">
           <h2>taller</h2>
 
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <!--ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol-->
+          <div id="carouselTaller" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/slide2-1.jpg" class="d-block w-100" alt="DG service">
@@ -202,11 +197,11 @@
                 <img src="images/slide2-4.jpg" class="d-block w-100" alt="DG service">
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselTaller" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselTaller" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
@@ -215,7 +210,7 @@
       </div>
     </div>
   </section>
-  <section class="seccion-formulario container-fluid">
+  <section class="seccion-formulario container-fluid" id="contacto">
     <div class="row">
       <div class="container">
         <div class="row">
@@ -265,19 +260,19 @@
               <div class="col-4 centrado lineas-laterales">
                 <img src="images/ubicacion.png" alt="logo de ubicacion">
                 <span>
-                  <p><b>Fonrouge 3029</b><br>Capital Federal (1439)</p>         
+                  <p><b>Fonrouge 3029</b><br>Capital Federal (1439)</p>
                 </span>
               </div>
               <div class="col-4 centrado">
                 <p>Seguinos en las redes</p>
                 <a href="https://www.facebook.com/dgserviceok" target="_blank"><img src="images/facebook.png" alt="logo facebook"></a>
                 <a href="https://www.instagram.com/dgservice_ok/" target="_blank"><img src="images/instagram.png" alt="logo instagram"></a>
-              </div>   
+              </div>
             </div>
           </div>
       </div>
     </div>
   </section>
-   
-  
+
+
 </body>
