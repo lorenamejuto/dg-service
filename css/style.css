@@ -40,7 +40,7 @@ img {
 body {
 	font-family: 'now';
 	font-size: 14px;
-  background-color: #58BDE1;
+  	background-color: #58BDE1;
 }
 h1 {
 	text-transform: uppercase;
@@ -51,7 +51,7 @@ h2 {
 	font-size: 16px;
 	text-transform: uppercase;
 	display: inline-block;
-  font-weight: 300;
+  	font-weight: 300;
 }
 h3 {
 	font-size: 18px;
@@ -412,4 +412,33 @@ button {
 	padding: 10px 25px;
 	letter-spacing: 2px;
 }
+.wp {
+	position: relative;
+    padding-bottom: 16px;
+}
+.seccion-formulario h1 {
+	font-size: 34px;
+    color: #58bde1;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0px;
+    line-height: 26px;
+}
+.seccion-formulario h3 {
+	font-size: 35px;
+    letter-spacing: 2px;
+    background-color: #58bde1;
+    color: #30348a;
+    padding: 5px 27px;
+    margin: 0;
+    display: inline-block;
+    margin-left: 58px;
+}
+.wp img{
+	position: absolute;
+    bottom: -1px;
+    left: -22px;
+}
+
 /*Fin de sección formulario*/
