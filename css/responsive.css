@@ -1,5 +1,7 @@
 @media (max-width: 1199px) {
-
+  .formulario {
+    margin-left: 50px;
+  }
 }
 @media (max-width: 991px) {
   .navbar {
@@ -59,6 +61,13 @@
   .puerta-puerta h1 {
     font-size: 32px;
   }
+  .seccion-formulario h2 {
+    top: -360px;
+    left: 18%;
+  }
+  .wp {
+  padding-top: 50px;
+  }
 }
 
 @media(max-width: 767px) {
@@ -90,6 +99,16 @@
   .servicio {
     margin-top: 7px;
     max-width: 110px;
+  }
+  .lineas-laterales {
+    border-left: inherit;
+    border-right: inherit;
+  }
+  .footer-container {
+    padding-top: 50px;
+  }
+  .taller {
+    left: -25%
   }
 }
 

@@ -370,6 +370,12 @@ hr {
 .marcas ul li:nth-child(1), .marcas ul li:nth-child(2), .marcas ul li:nth-child(3), .marcas ul li:nth-child(4), .marcas ul li:nth-child(5) {
 	width: 19%;
 }
+.taller {
+	position: relative;
+    top: 60px;
+    left: -39%;
+    z-index: 11;
+}
 .carrousel-2 {
 	margin-top: -40px;
 }
@@ -403,6 +409,9 @@ hr {
 }
 .mapa {
 	border-radius: 50%;
+}
+.formulario {
+	margin-left: 0:;
 }
 .formulario label {
 	font-size: 14px;
@@ -444,6 +453,7 @@ button {
 .wp {
 	position: relative;
     padding-bottom: 16px;
+    padding-top: 0;
 }
 .seccion-formulario h1 {
 	font-size: 34px;
@@ -482,6 +492,7 @@ button {
 	border-top: 1px solid #fff;
 	width: 100%;
 	margin-top: 70px;
+	padding-top: 0;
 }
 .footer p {
 	color: #fff;
