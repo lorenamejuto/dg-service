@@ -5,10 +5,29 @@
   .navbar-brand {
     max-width: 270px;
   }
+  .nav-item {
+    padding-bottom: 0;
+    margin-left: 0;
+    text-align: center;
+    border-bottom: 1px solid #30348a;
+  }
+  .nav-item.active:after {
+    display: none;
+  }
+  .navbar-nav {
+    border-bottom: 0;
+    border-top: 1px solid #30348a;
+  }
+  .navbar-collapse ul {
+    margin-top: 10px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .carousel-indicators {
     padding: 5px 12px;
   }
-
   .carousel-frase h2 {
     font-size: 25px;
     padding: 1px 10px;
@@ -20,6 +39,12 @@
   }
   .carousel-control-next, .carousel-control-prev {
     width: 40px;
+  }
+  .puerta-puerta {
+    margin-top: -40px;
+  }
+  .puerta-puerta .container {
+    max-width: 970px;
   }
 }
 
