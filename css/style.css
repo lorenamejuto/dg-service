@@ -132,6 +132,7 @@ b {
 	text-transform: uppercase;
 	padding-right: 0;
     padding-left: 0;
+    letter-spacing: 3px;
 }
 .nav-link {
 	position: relative;

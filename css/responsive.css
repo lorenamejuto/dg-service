@@ -1,3 +1,9 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
 @media (max-width: 1199px) {
   .formulario {
     margin-left: 50px;
@@ -65,8 +71,14 @@
   .puerta-puerta h1 {
     font-size: 32px;
   }
+  .seccion-formulario {
+    text-align: center;
+  }
+  .formulario {
+    margin-left: 0;
+  }
   .seccion-formulario h2 {
-    top: -360px;
+    top: -320px;
     left: 18%;
   }
   .wp {
@@ -119,6 +131,10 @@
     font-size: 25px;
     margin-left: 5px;
   }
+  .seccion-formulario h2 {
+    top: 60px;
+    left: -25%;
+  }
   .marcas {
     padding-top: 0;
   }
@@ -159,7 +175,19 @@
     max-width: inherit;
     padding: 8px 15px;
   }
-
+  .seccion-formulario h1 {
+    font-size: 27px;
+    line-height: 21px;
+  }
+  .seccion-formulario h3 {
+    font-size: 27px;
+  }
+  .wp img {
+    position: absolute;
+    bottom: 0px;
+    left: -9px;
+    width: 23%;
+  }
   .carousel-frase h2 {
     background-color: inherit;
     font-size: 18px;
