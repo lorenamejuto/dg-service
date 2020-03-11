@@ -19,7 +19,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </head>
@@ -216,7 +217,54 @@
         <div class="row">
           <div class="col-lg-5 col-12">
             <h2>contacto</h2>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52504.951838995505!2d-58.51675752335241!3d-34.66582626829313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc96a747d4b67%3A0xc53969dd185b2b33!2sFonrouge%203029%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1583490699930!5m2!1ses-419!2sar" width="350" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+						<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8euH_Pp8ikifLB1zDyigZG9ebZLPi-k&sensor=true"></script>
+						<script type="text/javascript">
+							var mapCenter = new google.maps.LatLng(-34.6658263, -58.4839273);
+							var mapZoom = 17;
+							var mapOptions = {
+									  center: mapCenter,
+							      zoom: mapZoom,
+							      mapTypeId: google.maps.MapTypeId.ROADMAP,
+									  panControl: false,
+									  mapTypeControl: false,
+							};
+
+							var finalMap;
+
+							google.maps.event.addDomListener(window, 'load', loadFinalMap);
+
+							function loadFinalMap() {
+							finalMap = new google.maps.Map(document.getElementById("map-map"), mapOptions);
+
+							loadMapMarkers();
+
+							}
+
+							function loadMapMarkers (){
+
+							var markerPosition = new google.maps.LatLng(-34.6658263, -58.4839273);
+
+							var markerImage = {
+							  url: 'images/mapa-pin.png',
+							};
+
+							markerGlastonbury = new google.maps.Marker({
+								  position: markerPosition,
+							    map: finalMap,
+							    title: 'DG Service',
+								  icon: markerImage,
+								  zIndex:102
+							});
+
+							}
+							</script>
+							<style type="text/css">
+							  #map-map {
+							  	height: 100%;
+								  width: 100%;
+							  }
+							</style>
+							<div id="map-map"></div>
           </div>
           <div class="col-lg-7 col-12">
             <div class="formulario" id="contactform">
@@ -231,7 +279,7 @@
                     <button id="c_enviar" class="boton" name="send" onclick="cargaSendMail()" type="button">
                       ENVIAR
                     </button>
-                        </span>
+                </span>
                 <p id="nombre-box"></p>
                 <p id="email-box"></p>
                 <div id="c_information">
@@ -241,15 +289,15 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="wp">
             <h1><b>nuestro whatsapp</b></h1>
             <img src="images/wp.png" alt="logo whatsapp"><h3><b>15・3075・2351</b></h3>
           </div>
-        </div>
-        <div class="row comunicate">
+        </div> -->
+        <!-- <div class="row comunicate">
           <h3><b>O comunicate al.:</b>(+5411) 4601・0953</h3>
-        </div>
+        </div> -->
       </div>
       <div class="footer-container">
         <div class="container">
@@ -273,5 +321,5 @@
       </div>
     </div>
   </section>
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>

@@ -454,6 +454,13 @@ hr {
 	display: flex;
     justify-content: flex-start;
 }
+form p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+form .c_error, #c_information p {
+  color: #fff;
+}
 button {
 	background-color: #30348a;
 	font-size: 14px;
