@@ -81,7 +81,7 @@
   		<span class="carousel-control-next-icon" aria-hidden="true"></span>
   		<span class="sr-only">Next</span>
 		</a>
-		<div class="carousel-frase">
+		<div class="carousel-frase"  id="nosotros">
 			<h2>SERVICE ESPECIALIZADO EN <br><b>HELADERAS, LAVARROPAS Y LAVAVAJILLAS</b></h2>
 		</div>
 	</div>
@@ -106,7 +106,7 @@
             </figure>
           </div>
         </div>
-        <div class="col-12 col-md-6 fondo-puerta-puerta" id="nosotros">
+        <div class="col-12 col-md-6 fondo-puerta-puerta">
           <div class="nosotros">
             <h2>nosotros</h2>
             <p>Somos una empresa dedicada a la <b>reparación de electrodomésticos.</b></p>
@@ -124,7 +124,8 @@
       </div>
     </div>
   </section>
-  <img width="100%" src="images/imagenes-servicios.jpg" alt="imagenes servicio" id="servicios">
+  <img width="100%" src="images/imagenes-servicios.jpg" alt="imagenes servicio">
+  <span class="padding" id="servicios"></span>
   <section class="container-fluid servicio-autorizado-container centrado">
     <div class="container servicio-autorizado">
       <div class="row">
@@ -172,14 +173,14 @@
         <h5>además ofrecemos</h5>
       </div>
       <div class="row fondo-blanco centrado espaciado">
-        <h4 class="color-azul"><b>SERVICIO TÉCNICO OFICIAL</b><br>de las compañias de Seguro</h4>
+        <h4 class="color-azul" id="taller"><b>SERVICIO TÉCNICO OFICIAL</b><br>de las compañias de Seguro</h4>
       </div>
       <div class="row fondo-blanco centrado espaciado">
         <img src="images/assurant.png" alt="logo assurant">
         <img src="images/warranty.png" alt="logo warranty">
       </div>
 
-      <div class="row" id="taller">
+      <div class="row">
         <div class="carrousel-2">
           <img class="taller" src="images/taller.png" alt="taller">
 
@@ -211,60 +212,18 @@
       </div>
     </div>
   </section>
-  <section class="seccion-formulario container-fluid" id="contacto">
+  <section class="seccion-formulario container-fluid">
+	<span class="padding" id="contacto"></span>
     <div class="row">
       <div class="container">
         <div class="row">
           <div class="col-lg-5 col-12">
-            <h2>contacto</h2>
-						<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC8euH_Pp8ikifLB1zDyigZG9ebZLPi-k&sensor=true"></script>
-						<script type="text/javascript">
-							var mapCenter = new google.maps.LatLng(-34.6658263, -58.4839273);
-							var mapZoom = 17;
-							var mapOptions = {
-									  center: mapCenter,
-							      zoom: mapZoom,
-							      mapTypeId: google.maps.MapTypeId.ROADMAP,
-									  panControl: false,
-									  mapTypeControl: false,
-							};
-
-							var finalMap;
-
-							google.maps.event.addDomListener(window, 'load', loadFinalMap);
-
-							function loadFinalMap() {
-							finalMap = new google.maps.Map(document.getElementById("map-map"), mapOptions);
-
-							loadMapMarkers();
-
-							}
-
-							function loadMapMarkers (){
-
-							var markerPosition = new google.maps.LatLng(-34.6658263, -58.4839273);
-
-							var markerImage = {
-							  url: 'images/mapa-pin.png',
-							};
-
-							markerGlastonbury = new google.maps.Marker({
-								  position: markerPosition,
-							    map: finalMap,
-							    title: 'DG Service',
-								  icon: markerImage,
-								  zIndex:102
-							});
-
-							}
-							</script>
-							<style type="text/css">
-							  #map-map {
-							  	height: 100%;
-								  width: 100%;
-							  }
-							</style>
-							<div id="map-map"></div>
+            <div class="container-mapa">
+              <img src="images/contacto.png" class="orientacion" alt="contacto">
+              <div class="embed-container">
+						    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.559489937218!2d-58.483927285192955!3d-34.66582626829315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc96a747d4b67%3A0xc53969dd185b2b33!2sFonrouge%203029%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1583960990747!5m2!1ses-419!2sar" width="400" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
           </div>
           <div class="col-lg-7 col-12">
             <div class="formulario" id="contactform">
@@ -289,15 +248,15 @@
             </div>
           </div>
         </div>
-        <!-- <div class="row">
+        <div class="row">
           <div class="wp">
             <h1><b>nuestro whatsapp</b></h1>
             <img src="images/wp.png" alt="logo whatsapp"><h3><b>15・3075・2351</b></h3>
           </div>
-        </div> -->
-        <!-- <div class="row comunicate">
+        </div>
+        <div class="row comunicate">
           <h3><b>O comunicate al.:</b>(+5411) 4601・0953</h3>
-        </div> -->
+        </div>
       </div>
       <div class="footer-container">
         <div class="container">

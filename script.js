@@ -10,6 +10,10 @@ function activeBotonNavbar() {
 			links[i].classList.remove('active');
 		}
 
+			if (event.target.hash == '#contacto') {
+				console.log('co')
+			}
+
 	}, false);
 }
 

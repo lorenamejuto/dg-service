@@ -92,6 +92,9 @@ b {
 	margin-left: 0;
 	width: 100%;
 }
+.padding {
+	padding-top: 40px;
+}
 .fondo-blanco {
 	background-color: #fff;
 }
@@ -406,27 +409,22 @@ hr {
 /*Fin de sección servicios autorizados*/
 /*Sección formulario*/
 .seccion-formulario {
+  position: relative;
 	margin-top: -2px;
 	padding-top: 70px;
 	background-color: #30348a;
 }
-.seccion-formulario h2{
-	position: relative;
-	top: 25px;
-	left: 5%;
-	padding: 10px 45px;
-	color: #30348a;
-	background-color: #fff;
-	z-index: 4;
-	-webkit-box-shadow: -1px 10px 15px -5px rgba(168,158,168,1);
-	-moz-box-shadow: -1px 10px 15px -5px rgba(168,158,168,1);
-	box-shadow: -1px 10px 15px -5px rgba(168,158,168,1);
+.orientacion {
+    position: absolute;
+    z-index: 9;
+    top: 0px;
+    left: 0;
 }
 .mapa {
 	border-radius: 50%;
 }
 .formulario {
-	margin-left: 0;
+	margin-left: 60px;
 }
 .formulario label {
 	font-size: 14px;
@@ -475,7 +473,7 @@ button {
 .wp {
 	position: relative;
     padding-bottom: 16px;
-    padding-top: 25px;
+    padding-top: 50px;
 }
 .seccion-formulario h1 {
 	font-size: 34px;
@@ -529,3 +527,26 @@ button {
 	border-right: 1px solid #fff;
 }
 /*Fin de sección formulario*/
+
+.embed-container {
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container-mapa {
+	position: relative;
+	width: 370px;
+}
+#contacto {
+  position: absolute;
+  top: -120px;
+}
